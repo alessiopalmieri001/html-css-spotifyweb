@@ -32,14 +32,36 @@ header{
     height: calc(100vh - 100px);
     display: flex;
 }
+.gigi{
+    height: 1000px;
+    background-color:blue ;
+}
+.playlist nav > ul{
+    display:flex ;
+    justify-content: center;
+    
+}
+.playlist nav > ul > li > a {
+   padding: 10px 20px;
+}
+.playlist nav{
+    padding-top: 20px;
+}
 
 /* main */
+
 
 .main-left{
     width: 200px;
 }
 .main-right{
     width: calc(100% - 200px);
+    height: 100%;
+}
+.playlist {
+    padding-top: 80px;
+    height: 100%;
+    overflow: auto;
 }
 
 
@@ -52,17 +74,17 @@ footer{
 .debug footer{
     background-color: aquamarine;
 }
-.debug main{
+.debug .wrapper{
     background-color: green;
 }
-.debug main .main-left{
+.debug .wrapper .main-left{
     background-color: red;
 }
-.debug main .main-right{
+.debug .wrapper .main-right{
     background-color: yellow;
 }
 
-main > aside,
-main > section{
+.wrapper > aside,
+.wrapper > main{
     border: 2px dashed black;
 }
